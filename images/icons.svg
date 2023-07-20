@@ -134,5 +134,9 @@
         <symbol id="checkmark" viewBox="0 0 32 32">
             <path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
         </symbol>
+        <symbol id="menu-hamburger" viewBox="0 0 47 32">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4.364"
+                d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965" />
+        </symbol>
         </defs>
 </svg>

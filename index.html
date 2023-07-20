@@ -27,7 +27,12 @@
           <a class="header-logo-link link" href="./index.html"
             >Web<span class="logo-up">Studio</span></a
           >
-          <ul class="header-list list">
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
+          <ul class="header-list overlay list">
             <li class="header-item">
               <a class="header-link link active" href="./index.html">Studio</a>
             </li>
@@ -39,7 +44,7 @@
             </li>
           </ul>
         </nav>
-        <address class="header-address">
+        <address class="header-address overlay ">
           <ul class="header-address-list list">
             <li class="header-address-item">
               <a class="header-address-link link" href="mailto:info@devstudio.com"
@@ -55,7 +60,7 @@
     </header>
     <main class="main">
       <section class="section hero">
-        <div class="container">
+        <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>Order Service</button>
         </div>
@@ -115,23 +120,36 @@
           </ul>
         </div>
       </section>
-      <section class="section made">
+ <section class="section made">
         <div class="container">
           <h2 class="made-title">What are we doing</h2>
           <ul class="made-list list">
             <li class="made-item">
-              <img class="made-img" src="./images/maid/img1.jpg" alt="monitor" width="360" />
+              <img class="made-img" 
+              srcset="
+              ./images/maid/image1@1x.jpg 1x,
+              ./images/maid/image1@2x.jpg 2x"
+              src="./images/maid/image1@1x.jpg"
+               alt="monitor" width="720" />
             </li>
             <li class="made-item">
               <img
                 class="made-img"
-                src="./images/maid/img2.jpg"
+                srcset="
+              ./images/maid/image2@1x.jpg 1x,
+              ./images/maid/image2@2x.jpg 2x"
+                src="./images/maid/image2@1x.jpg"
                 alt="chats on the phone"
-                width="360"
+                width="720"
               />
             </li>
             <li class="made-item">
-              <img class="made-img" src="./images/maid/img3.jpg" alt="phone in hand" width="360" />
+              <img class="made-img" 
+              srcset="
+              ./images/maid/image3@1x.jpg 1x,
+              ./images/maid/image3@2x.jpg 2x"
+              src="./images/maid/image3@1x.jpg"
+               alt="phone in hand" width="720" />
             </li>
           </ul>
         </div>
@@ -143,9 +161,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/TeamCard1.jpg"
+                srcset="
+              ./images/team/img1@1x.jpg 1x,
+              ./images/team/img1@2x.jpg 2x"
+                src="./images/team/img1@1x.jpg"
                 alt="Mark Guerrero product Designer"
-                width="264"
+                width="528"
               />
               <div class="container-team-text">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
@@ -185,9 +206,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/TeamCard2.jpg"
+                srcset="
+              ./images/team/img2@1x.jpg 1x,
+              ./images/team/img2@2x.jpg 2x"
+                src="./images/team/img2@1x.jpg"
                 alt="Tom Ford Frontend Developer "
-                width="264"
+                width="528"
               />
               <div class="container-team-text">
                 <h3 class="team-subtitle">Tom Ford</h3>
@@ -227,9 +251,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/TeamCard3.jpg"
+                srcset="
+              ./images/team/img3@1x.jpg 1x,
+              ./images/team/img3@2x.jpg 2x"
+                src="./images/team/img3@1x.jpg"
                 alt="Camila Garcia Marketing "
-                width="264"
+                width="528"
               />
               <div class="container-team-text">
                 <h3 class="team-subtitle">Camila Garcia</h3>
@@ -269,9 +296,12 @@
             <li class="team-item">
               <img
                 class="team-img"
-                src="./images/team/TeamCard4.jpg"
+                srcset="
+              ./images/team/img4@1x.jpg 1x,
+              ./images/team/img4@2x.jpg 2x"
+                src="./images/team/img4@1x.jpg"
                 alt="Daniel WilsonUI Designer "
-                width="264"
+                width="528"
               />
               <div class="container-team-text">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
@@ -311,7 +341,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers section">
+       <section class="customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list">
@@ -421,8 +451,8 @@
         </div>
       </div>
     </footer>
-    <!-- modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- - modal window -->
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal-box">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -490,5 +520,8 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+  </body>
+</html> 
+    </main>
   </body>
 </html>
