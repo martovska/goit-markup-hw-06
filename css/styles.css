@@ -117,15 +117,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-/* @media screen and (min-width: 428px) and (max-width: 768px) {
+/* 
+@media screen and (min-width: 428px) and (max-width: 768px) {
   .header-container {
     position: relative;
     overflow: hidden;
   }
-}
+} */
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
+/* @media screen and (min-width: 428px) and (max-width: 768px) {
   .overlay {
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--light);
   }
-} */
+} */ */
 
 
 @media screen and (min-width: 768px) {
@@ -1637,6 +1637,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 /* mobile-menu */
 
 .menu-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   min-height: 24px;
   min-width: 24px;
   display: flex;
@@ -1661,7 +1664,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 } */
 
 .menu-toggle-icon {
-  stroke: var(--dark);
+    stroke: var(--dark);
     fill: var(--modal-background);
     stroke-width: 1px;
   
